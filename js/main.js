@@ -97,27 +97,27 @@ $(document).ready(function () {
 
     //counter
 
-    $(window).scroll(function () {
-        var vh = $(window).height();
-        var scroll = $(window).scrollTop();
-        var position = $('.achievements').offset().top;
-        $('.counter-number').each(function () {
-
-            if (position < vh + scroll - 100) {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 4000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-
-                });
-            }
-            ;
-        });
-    });
+//    $(window).scroll(function () {
+//        var wh = $(window).height();
+//        var scroll = $(window).scrollTop();
+//        var position = $('.achievements').offset().top;
+//        $('.counter-number').each(function () {
+//
+//            if (position < wh + scroll - 100) {
+//                $(this).prop('Counter', 0).animate({
+//                    Counter: $(this).text()
+//                }, {
+//                    duration: 4000,
+//                    easing: 'swing',
+//                    step: function (now) {
+//                        $(this).text(Math.ceil(now));
+//                    }
+//
+//                });
+//            }
+//            ;
+//        });
+//    });
 
 
 
